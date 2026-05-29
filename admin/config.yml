@@ -1,0 +1,37 @@
+backend:
+  name: github
+  repo: edeencongo/Edeen-Congo
+  branch: main
+
+media_folder: images
+
+collections:
+  - name: actualites
+    label: Actualites
+    folder: _actualites
+    create: true
+    fields:
+      - label: Titre
+        name: title
+        widget: string
+      - label: Date
+        name: date
+        widget: datetime
+      - label: Contenu
+        name: body
+        widget: markdown
+
+  - name: activites
+    label: Activites
+    folder: _activites
+    create: true
+    fields:
+      - label: Titre
+        name: title
+        widget: string
+      - label: Secteur
+        name: secteur
+        widget: string
+      - label: Description
+        name: body
+        widget: markdown
